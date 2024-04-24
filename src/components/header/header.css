@@ -1,0 +1,97 @@
+/* Top menu */
+
+.top-menu {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: var(--main-blue);
+    justify-content: space-between;
+}
+
+.top-menu p {
+    color: var(--white);
+}
+
+/* features area */
+
+.features-area {
+    width: 70%;
+    gap: 50px;
+    justify-content: flex-start;
+    padding-left: 5%;
+}
+
+/* currebcy area */
+
+.currency-area {
+    width: 20%;
+    justify-content: flex-end;
+    padding-right: 5%;
+}
+
+.currency-switcher {
+    gap: 20px;
+    justify-content: flex-end;
+}
+
+/* Main menu */
+
+.main-menu {
+    justify-content: space-between;
+    min-height: 80px;
+}
+
+/* logo area */
+
+.main-menu .logo-area {
+    width: 20%;
+    justify-content: flex-start;
+    padding-left: 5%;
+}
+
+.logo-area img {
+    height: 50px;
+    width: auto;
+}
+
+/* menu */
+
+.menu-area {
+    width: 40%;
+}
+
+.menu-area nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10%;
+}
+
+.menu-area li {
+    list-style-type: none;
+}
+
+.menu-area a {
+   color: var(--black);
+   padding: 3px 7px;
+}
+
+.menu-area a:hover, .menu-area a:focus {
+    border-bottom: 2px solid var(--main-blue);
+    color: #006496;
+    font-weight: 500;
+}
+
+/* cart area */
+
+.cart-area {
+    width: 20%;
+    justify-content: flex-end;
+    padding-right: 5%;
+}
+
+.cart p {
+    font-size: 14px;
+}
+
+
