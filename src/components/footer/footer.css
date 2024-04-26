@@ -83,7 +83,6 @@
 
 .second-column a:hover {
     border-bottom: 1px solid var(--white);
-    font-weight: 500;
     padding-bottom: 1px;
 }
 
@@ -110,15 +109,22 @@
 /* MOBILE */
 
 @media screen and (max-width: 767px) {
+
+    /* first column */
+
     .first-column, .second-column, .first-column .logo-area {
         width: 100%;
         justify-content: center;
         align-items: center;
     }
 
+    .first-column {
+        padding: 0;
+        margin-bottom: 50px;
+    }
+
     .first-column .logo-area {
         gap: 2px;
-        margin-left: -15px;
     }
 
     .first-column img {

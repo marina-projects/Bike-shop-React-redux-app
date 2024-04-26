@@ -18,7 +18,7 @@ const Footer = () => {
                 <div className="project-description div-column">
                     <p>This is a basic react app that uses Yelp API to allow users to search Georgian eatery in USA cities. This project is part of a off-line challenge from a Codecademy's Frontend developer path.</p>
                     <p className="read-more">Read more on GitHub:</p>
-                    <button href="https://github.com/marina-projects/react_app_georgian_food" target="_blank" rel="noreferrer">GitHub</button>
+                    <a href="https://github.com/marina-projects/Bike-shop-React-redux-app" target="_blank" rel="noreferrer"><button>GitHub</button></a>
                 </div>
             </div>
             <div className="second-column div-column">

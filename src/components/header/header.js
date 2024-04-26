@@ -14,11 +14,11 @@ const Header = () => {
                     <p>Free delivery</p>
                 </div>
                 <div className="currency-area div-row">
-                    <div className="currency-switcher div-row">
-                        <p>RSD</p>
-                        <p>EUR</p>
-                        <p>USD</p>
-                    </div>
+                    <ul className="currency-switcher div-row">
+                        <li>RSD</li>
+                        <li>EUR</li>
+                        <li>USD</li>
+                    </ul>
                 </div>
             </div>
             <div className="main-menu div-row">

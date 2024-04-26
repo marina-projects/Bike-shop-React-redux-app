@@ -1,8 +1,7 @@
 /* Top menu */
 
 .top-menu {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 10px 0;
     background-color: var(--main-blue);
     justify-content: space-between;
 }
@@ -31,6 +30,17 @@
 .currency-switcher {
     gap: 20px;
     justify-content: flex-end;
+}
+
+.currency-switcher li {
+    color: var(--white);
+    padding-bottom: 2px;
+}
+
+.currency-switcher li:hover, .menu-area a:focus {
+    border-bottom: 1px solid var(--white);
+    padding-bottom: 1px;
+    cursor: pointer;
 }
 
 /* Main menu */
@@ -67,10 +77,6 @@
     gap: 10%;
 }
 
-.menu-area li {
-    list-style-type: none;
-}
-
 .menu-area a {
    color: var(--black);
    padding: 3px 7px;
@@ -78,8 +84,7 @@
 
 .menu-area a:hover, .menu-area a:focus {
     border-bottom: 2px solid var(--main-blue);
-    color: #006496;
-    font-weight: 500;
+    color: var(--main-blue);
 }
 
 /* cart area */
@@ -94,4 +99,47 @@
     font-size: 14px;
 }
 
+/* MOBILE */
+
+@media screen and (max-width: 767px) {
+
+    /* top menu */
+
+    .top-menu {
+        padding: 0;
+    }
+
+    .features-area {
+        display: none;
+    }
+
+    .currency-area {
+        width: 100%;
+        padding: 0;
+    }
+
+    .currency-switcher {
+        gap: 10px;
+        justify-content: center;
+        padding: 0;
+    }
+
+    /* main menu */
+
+    .menu-area {
+        width: 100%;
+        padding: 5% 3%;
+        background-color: #f3f3f3;
+    }
+
+    .cart-area, .logo-area {
+        order: -1;
+        padding: 2% 3%;
+    }
+
+    .menu-area nav {
+        justify-content: space-between;
+    }
+
+}
 

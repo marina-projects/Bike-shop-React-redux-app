@@ -9,6 +9,10 @@ p, h1, h2, h3 {
   margin: 0;
 }
 
+li {
+  list-style-type: none;
+}
+
 div {
   display: flex;
   justify-content: center;
