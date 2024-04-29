@@ -1,0 +1,27 @@
+/* ALL */
+
+.cart-item {
+    width: 85%;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.item-area {
+    align-items: flex-start;
+    width: 70%;
+    gap: 5px;
+}
+
+.input-area {
+    width: 20%;
+}
+
+/* MUI input */
+
+.MuiInputBase-root {
+    width: 50px;
+}
+
+.MuiInputBase-input {
+    padding: 5px !important;
+}

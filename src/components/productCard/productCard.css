@@ -1,0 +1,22 @@
+.product-card {
+    width: 25%;
+    padding: 20px;
+    gap: 20px;
+    background-color: var(--white);
+    border-radius: 5px;
+}
+
+.product-card img {
+    height: 120px;
+    width: auto;
+}
+
+.product-card h3 {
+    width: 70%;
+    text-align: center;
+}
+
+.product-card button {
+    background-color: var(--main-blue);
+    color: var(--white);
+}

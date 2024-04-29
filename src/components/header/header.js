@@ -4,7 +4,7 @@ import logo from '../../images/logo.png';
 import ShoppingBagOutlinedIcon from '@mui/icons-material/ShoppingBagOutlined';
 
 
-const Header = () => {
+const Header = ( {openCloseCartHandler} ) => {
     return (
         <div className="div-column">
             <div className="top-menu div-row">
@@ -33,9 +33,10 @@ const Header = () => {
                     </nav>
                 </div>
                 <div className="cart-area">
-                    <div className="cart">
-                        <ShoppingBagOutlinedIcon sx={{ fontSize: 28 }}/>
-                        <p>15000din</p>
+                    <div className="cart-icon" onClick={openCloseCartHandler}>
+                        <ShoppingBagOutlinedIcon sx={{ fontSize: 36 }}/>
+                        <p className="qauntity">1</p>
+                        <p>28990 RSD</p>
                     </div>
                 </div>
             </div>

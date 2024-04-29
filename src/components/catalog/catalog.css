@@ -1,0 +1,9 @@
+.catalog {
+    padding: 50px 0;
+    background-color: rgb(246, 246, 246);
+}
+
+.catalog-inner {
+    width: 80%;
+    gap: 50px;
+}

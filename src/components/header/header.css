@@ -1,7 +1,6 @@
 /* Top menu */
 
 .top-menu {
-    padding: 10px 0;
     background-color: var(--main-blue);
     justify-content: space-between;
 }
@@ -95,8 +94,23 @@
     padding-right: 5%;
 }
 
-.cart p {
-    font-size: 14px;
+.cart-icon {
+    cursor: pointer;
+}
+
+.cart-icon p {
+    font-size: 16px;
+    margin-left: 8px;
+}
+
+.cart-icon .qauntity {
+    background-color: var(--main-blue);
+    color: white;
+    border-radius: 30px;
+    padding: 3px 6px;
+    font-size: 12px;
+    margin-top: -14px;
+    margin-left: -14px;
 }
 
 /* MOBILE */
