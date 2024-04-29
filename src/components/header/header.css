@@ -3,6 +3,8 @@
 .top-menu {
     background-color: var(--main-blue);
     justify-content: space-between;
+    position: fixed;
+    top: 0;
 }
 
 .top-menu p {
@@ -18,7 +20,7 @@
     padding-left: 5%;
 }
 
-/* currebcy area */
+/* currency area */
 
 .currency-area {
     width: 20%;
@@ -47,6 +49,7 @@
 .main-menu {
     justify-content: space-between;
     min-height: 80px;
+    margin-top: 52px;
 }
 
 /* logo area */
@@ -144,6 +147,10 @@
         width: 100%;
         padding: 5% 3%;
         background-color: #f3f3f3;
+    }
+
+    .cart-area {
+        width: 35%;
     }
 
     .cart-area, .logo-area {
