@@ -2,9 +2,9 @@ import React from "react";
 import './header.css';
 import logo from '../../images/logo.png';
 import ShoppingBagOutlinedIcon from '@mui/icons-material/ShoppingBagOutlined';
+import Menu from "../../features/menu/menu";
 
-
-const Header = ( {openCloseCartHandler} ) => {
+const Header = ( {openCloseCartHandler, inventory, dispatch} ) => {
     return (
         <div className="div-column">
             <div className="top-menu div-row">
@@ -25,13 +25,10 @@ const Header = ( {openCloseCartHandler} ) => {
                 <div className="logo-area">
                     <img src={logo} alt='logo' />
                 </div>
-                <div className="menu-area">
-                    <nav>
-                        <li><a href="#">All bikes</a></li>
-                        <li><a href='#'>City bikes</a></li>
-                        <li><a href="#">Road bikes</a></li>
-                    </nav>
-                </div>
+                <Menu 
+                    inventory={inventory}
+                    dispatch={dispatch}
+                />
                 <div className="cart-area">
                     <div className="cart-icon" onClick={openCloseCartHandler}>
                         <ShoppingBagOutlinedIcon sx={{ fontSize: 36 }}/>

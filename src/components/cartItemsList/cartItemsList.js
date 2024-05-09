@@ -1,7 +1,7 @@
 import React from "react";
 import './cartItemsList.css';
 import { TextField } from "@mui/material";
-import allBikes from "../../data/allBikes";
+import { allBikes } from "../../data/allBikes";
 
 const CartItemsList = () => {
     return (

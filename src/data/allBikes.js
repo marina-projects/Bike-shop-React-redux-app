@@ -4,32 +4,39 @@ import image_3 from '../images/products/product-3.jpeg';
 import image_4 from '../images/products/product-4.jpeg';
 import image_5 from '../images/products/product-5.jpeg';
 
-const allBikes = [
+export const allBikes = [
     {
         title: 'BICIKL POLAR GRAZIA 6s Retro',
-        price: '28.990',
-        image: image_1
+        price: 28.990,
+        image: image_1,
+        category: 'City bikes'
     },
     {
         title: 'BICIKL POLAR GRAZIA 6s',
-        price: '30.990',
-        image: image_2
+        price: 30.990,
+        image: image_2,
+        category: 'City bikes'
     },
     {
         title: 'BICIKL POLAR GRAZIA 1s bordo',
-        price: '30.990',
-        image: image_3
+        price: 30.990,
+        image: image_3,
+        category: 'City bikes'
     },
     {
         title: 'BICIKL POLAR STRADA grey-black',
-        price: '38.990',
-        image: image_4
+        price: 38.990,
+        image: image_4,
+        category: 'Road bikes'
     },
     {
         title: 'BICIKL MACCINA CARAVELLE',
-        price: '22.490',
-        image: image_5
+        price: 22.490,
+        image: image_5,
+        category: 'Road bikes'
     }
 ]
 
-export default allBikes;
+export const currenciesData = ['RSD', 'EUR', 'USD'];
+
+export const bikeCategories = ['All bikes', 'City bikes', 'Road bikes'];
