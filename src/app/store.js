@@ -2,12 +2,12 @@ import {createStore, combineReducers} from 'redux';
 
 import { cartReducer } from '../features/cart/cartSlice';
 import { inventoryReducer } from '../features/inventory/inventorySlice';
-import { setMenuItemReducer } from '../features/menu/menuSlice';
+import { currencyFilterReducer } from '../features/currency/currencyFilterSlice';
 
 const reducers = {
     cartSlice: cartReducer,
     inventory: inventoryReducer,
-    menuItem: setMenuItemReducer
+    currencyFilter: currencyFilterReducer
 }
 
 export const store = createStore(combineReducers(reducers));

@@ -7,31 +7,31 @@ import image_5 from '../images/products/product-5.jpeg';
 export const allBikes = [
     {
         title: 'BICIKL POLAR GRAZIA 6s Retro',
-        price: 28.990,
+        price: 28990,
         image: image_1,
         category: 'City bikes'
     },
     {
         title: 'BICIKL POLAR GRAZIA 6s',
-        price: 30.990,
+        price: 30990,
         image: image_2,
         category: 'City bikes'
     },
     {
         title: 'BICIKL POLAR GRAZIA 1s bordo',
-        price: 30.990,
+        price: 30990,
         image: image_3,
         category: 'City bikes'
     },
     {
         title: 'BICIKL POLAR STRADA grey-black',
-        price: 38.990,
+        price: 38990,
         image: image_4,
         category: 'Road bikes'
     },
     {
         title: 'BICIKL MACCINA CARAVELLE',
-        price: 22.490,
+        price: 22490,
         image: image_5,
         category: 'Road bikes'
     }

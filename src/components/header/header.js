@@ -3,6 +3,7 @@ import './header.css';
 import logo from '../../images/logo.png';
 import ShoppingBagOutlinedIcon from '@mui/icons-material/ShoppingBagOutlined';
 import Menu from "../../features/menu/menu";
+import CurrencyFilter from "../../features/currency/currecncyFilter";
 
 const Header = ( {openCloseCartHandler, inventory, dispatch} ) => {
     return (
@@ -13,13 +14,10 @@ const Header = ( {openCloseCartHandler, inventory, dispatch} ) => {
                     <p>1000 active customers</p>
                     <p>Free delivery</p>
                 </div>
-                <div className="currency-area div-row">
-                    <ul className="currency-switcher div-row">
-                        <li>RSD</li>
-                        <li>EUR</li>
-                        <li>USD</li>
-                    </ul>
-                </div>
+                <CurrencyFilter
+                    inventory={inventory}
+                    dispatch={dispatch}
+                />
             </div>
             <div className="main-menu div-row">
                 <div className="logo-area">

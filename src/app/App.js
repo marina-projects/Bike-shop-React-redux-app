@@ -23,6 +23,7 @@ function App (props) {
       <Catalog 
         inventory={state.inventory}
         dispatch={dispatch}
+        currency={state.currencyFilter}
       />
       <Footer />
       <Cart openCart={openCart} openCloseCartHandler={openCloseCartHandler}/>

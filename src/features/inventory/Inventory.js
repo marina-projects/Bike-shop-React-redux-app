@@ -3,7 +3,7 @@ import ProductCard from "../../components/productCard/productCard";
 import './inventory.css';
 import { loadData } from "./inventorySlice";
 
-const Catalog = ( {inventory, dispatch} ) => {
+const Catalog = ( {inventory, dispatch, currency} ) => {
 
     const onMount = () => {
         dispatch(loadData());
@@ -17,7 +17,8 @@ const Catalog = ( {inventory, dispatch} ) => {
                     <ProductCard 
                         title={bikeItem.title}
                         price={bikeItem.price}
-                        image={bikeItem.image}         
+                        image={bikeItem.image}   
+                        currency={currency}      
                     />
                     ))
                 }

@@ -52,6 +52,10 @@
     margin-top: 52px;
 }
 
+.main-menu button {
+    background-color: transparent;
+}
+
 /* logo area */
 
 .main-menu .logo-area {
