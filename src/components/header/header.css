@@ -38,7 +38,7 @@
     padding-bottom: 2px;
 }
 
-.currency-switcher li:hover, .menu-area a:focus {
+.currency-switcher li:hover, .currency-switcher .selected {
     border-bottom: 1px solid var(--white);
     padding-bottom: 1px;
     cursor: pointer;
@@ -50,10 +50,6 @@
     justify-content: space-between;
     min-height: 80px;
     margin-top: 52px;
-}
-
-.main-menu button {
-    background-color: transparent;
 }
 
 /* logo area */
@@ -83,12 +79,15 @@
     gap: 10%;
 }
 
-.menu-area a {
-   color: var(--black);
-   padding: 3px 7px;
+
+.menu-area button {
+    color: var(--black);
+    padding: 3px 7px;
+    background-color: transparent;
+    border-radius: 0;
 }
 
-.menu-area a:hover, .menu-area a:focus {
+.menu-area button:hover, .menu-area button:focus, .menu-area .selected {
     border-bottom: 2px solid var(--main-blue);
     color: var(--main-blue);
 }

@@ -18,7 +18,6 @@ const ProductCard = ({title, price, image, currency}) => {
 
 export default ProductCard;
 
-
 // HELPERS
 const getCurrentPrice = (currency, price) => {
     switch(currency) {
