@@ -1,7 +1,4 @@
-const initialCurrencyFilter = {
-    cur: 'RSD',
-    class: 'selected'
-};
+const initialCurrencyFilter = 'RSD';
 
 export const setCurrency = (currency) => {
     return {

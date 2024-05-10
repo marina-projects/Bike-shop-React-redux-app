@@ -9,20 +9,12 @@ export const addItem = (itemToAdd) => {
 }
 
 // remove item
-export const removeItem = (itemToRemove) => {    
+export const removeItem = (itemId) => {    
     return {
         type: 'cart/removeItem',
-        payload: itemToRemove,
+        payload: itemId,
     }
 }
-
-// update quantity
-export const changeItemQuantity = (name, newQuantity) => {
-    return {
-      type: 'cart/changeItemQuantity',
-      payload: {name, newQuantity}
-    }
-  }
 
 // INITIAL STATE
 
@@ -38,22 +30,8 @@ export const cartReducer = (cart = initialCart, action) => {
                 ...cart,
                 action.payload
             ];
-
         case 'cart/removeItem': 
-            return cart.filter(item => item.id !== action.payload.id)
-        ;
-        case 'cart/changeItemQuantity': {
-            const { name, newQuantity } = action.payload;
-            const itemToUpdate = cart[name];
-            const updatedItem = {
-              ...itemToUpdate,
-              quantity: newQuantity
-            }
-            return {
-              ...cart,
-              [name]: updatedItem
-            };
-          }
+            return cart.filter(item => item.id !== action.payload.id);
         default: 
             return cart;
     }

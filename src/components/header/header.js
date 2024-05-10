@@ -4,8 +4,14 @@ import logo from '../../images/logo.png';
 import ShoppingBagOutlinedIcon from '@mui/icons-material/ShoppingBagOutlined';
 import Menu from "../../features/menu/menu";
 import CurrencyFilter from "../../features/currency/currecncyFilter";
+import { openCart } from "../../features/cart/openCartSlice";
 
-const Header = ( {openCloseCartHandler, inventory, dispatch} ) => {
+const Header = ( {inventory, dispatch} ) => {
+
+    const handleOpenCart = () => {
+        dispatch(openCart());
+    }
+
     return (
         <div className="div-column">
             <div className="top-menu div-row">
@@ -28,7 +34,7 @@ const Header = ( {openCloseCartHandler, inventory, dispatch} ) => {
                     dispatch={dispatch}
                 />
                 <div className="cart-area">
-                    <div className="cart-icon" onClick={openCloseCartHandler}>
+                    <div className="cart-icon" onClick={() => handleOpenCart()}>
                         <ShoppingBagOutlinedIcon sx={{ fontSize: 36 }}/>
                         <p className="qauntity">1</p>
                         <p>28990 RSD</p>

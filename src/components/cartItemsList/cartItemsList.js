@@ -1,13 +1,27 @@
 import React from "react";
 import './cartItemsList.css';
 import { TextField } from "@mui/material";
-import { allBikes } from "../../data/allBikes";
+import CloseIcon from '@mui/icons-material/Close';
+import { removeItem } from "../../features/cart/cartSlice";
 
-const CartItemsList = () => {
+const CartItemsList = ({cart, dispatch}) => {
+
+    const handleRemoveItem = (itemId) => {
+        dispatch(removeItem(itemId));
+    } 
+
+    if(cart.length === 0) {
+        return (
+            <>
+                <p>Cart Empty</p>
+            </>
+        )
+    } else {
     return (
         <>
-            {allBikes.map((bikeItem) => (
+            {cart.map((bikeItem) => (
                 <div className="cart-item div-row">
+                    <CloseIcon onClick={() => handleRemoveItem(bikeItem)} />
                     <div className="item-area div-column">
                         <p>{bikeItem.title}</p>
                         <p>{bikeItem.price}</p>
@@ -26,6 +40,7 @@ const CartItemsList = () => {
         </>
         
     )
+}
 }
 
 export default CartItemsList;

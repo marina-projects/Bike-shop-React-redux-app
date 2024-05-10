@@ -3,12 +3,12 @@ import ProductCard from "../../components/productCard/productCard";
 import './inventory.css';
 import { loadData } from "./inventorySlice";
 
-const Catalog = ( {inventory, dispatch, currency} ) => {
+const Catalog = ( {inventory, dispatch, currency, openCloseCartHandler} ) => {
 
     const onMount = () => {
         dispatch(loadData());
       };
-      useEffect(onMount, [dispatch]);  
+    useEffect(onMount, [dispatch]);  
 
     return (
         <div className="div-column catalog">
@@ -18,7 +18,10 @@ const Catalog = ( {inventory, dispatch, currency} ) => {
                         title={bikeItem.title}
                         price={bikeItem.price}
                         image={bikeItem.image}   
-                        currency={currency}      
+                        currency={currency}
+                        bikeItem={bikeItem}
+                        dispatch={dispatch}
+                        openCloseCartHandler={openCloseCartHandler}
                     />
                     ))
                 }
