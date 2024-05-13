@@ -14,6 +14,8 @@ function App (props) {
       <Header
         openCart={state.openCart}
         dispatch={dispatch}
+        cart={state.cart}
+        currency={state.currencyFilter}
       />
       <Catalog 
         inventory={state.inventory}
@@ -26,6 +28,7 @@ function App (props) {
         openCart={state.openCart}
         cart={state.cart}
         dispatch={dispatch}
+        currency={state.currencyFilter}
       />
     </div>
       );

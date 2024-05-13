@@ -1,33 +1,39 @@
-// calculating price in different currencies
+// Total cart calculation
 
-export function calculatePrice (price, currency) {
+export const totalSum = (cart) => {
+    let summa = 0;
+    for (let i = 0; i < cart.length; i++) {
+        summa = summa + cart[i].itemPrice;
+    }
+    return summa;
+}
+
+// Different prices according to currency
+
+export const getCurrentPrice = (currency, price) => {
     switch(currency) {
-        case 'EUR': 
-            return price * 0.86;
-        case 'CAD':
-            return price * 1.33;
-        default: 
+        case 'RSD':
+            return price * 1;
+        case 'USD':
+            return (price / 100).toFixed(2);
+        case 'EUR':
+            return (price / 110).toFixed(2);
+        default:
             return price;
-        
     }
 }
 
-export function calculateTotal (cart, currency) {
-    let totalUSD = 0;
-    Object.keys(cart).forEach((itemName) => {
-        totalUSD += cart[itemName].price + cart[itemName].quantity;
-    })
-    return calculatePrice(totalUSD, currency).toFixed(2);
-}
 
-export function getCurrencySymbol(currencyFilter) {
-    switch(currencyFilter) {
-        case 'USD':
+// Currensy symbol
+
+export const getCurrencySymbol = (currency) => {
+    switch(currency) {
+        case 'RSD':
+            return '';
+        case 'USD': 
             return '$';
         case 'EUR':
             return '€';
-        case 'CAD':
-            return '$';
         default: 
             return '';
     }

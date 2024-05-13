@@ -6,6 +6,10 @@
     margin-bottom: 30px;
 }
 
+.close-icon.close-icon-item {
+    width: 16px;
+}
+
 .item-area {
     align-items: flex-start;
     width: 70%;
@@ -14,6 +18,15 @@
 
 .input-area {
     width: 20%;
+}
+
+.empty-cart-area {
+    align-items: flex-start;
+    width: 85%;
+}
+
+.empty-cart-text {
+    text-align: left;
 }
 
 /* MUI input */
