@@ -3,7 +3,7 @@ import ProductCard from "../../components/productCard/productCard";
 import './inventory.css';
 import { loadData } from "./inventorySlice";
 
-const Catalog = ( {inventory, dispatch, currency, openCloseCartHandler} ) => {
+const Inventory = ( {inventory, dispatch, currency, openCloseCartHandler} ) => {
 
     const onMount = () => {
         dispatch(loadData());
@@ -30,4 +30,4 @@ const Catalog = ( {inventory, dispatch, currency, openCloseCartHandler} ) => {
     )
 }
 
-export default Catalog;
+export default Inventory;

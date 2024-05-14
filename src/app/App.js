@@ -2,8 +2,8 @@ import React from 'react';
 import '../App.css';
 import Header from '../components/header/header';
 import Footer from '../components/footer/footer';
-import Catalog from '../features/inventory/inventory';
 import Cart from '../components/cart/cart';
+import Inventory from '../features/inventory/inventory';
 
 function App (props) {
   
@@ -17,12 +17,13 @@ function App (props) {
         cart={state.cart}
         currency={state.currencyFilter}
       />
-      <Catalog 
+      <Inventory
         inventory={state.inventory}
         dispatch={dispatch}
         currency={state.currencyFilter}
         openCart={state.openCart}
       />
+  
       <Footer />
       <Cart
         openCart={state.openCart}
