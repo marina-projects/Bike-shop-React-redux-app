@@ -3,7 +3,7 @@ import '../App.css';
 import Header from '../components/header/header';
 import Footer from '../components/footer/footer';
 import Cart from '../components/cart/cart';
-import Inventory from '../features/inventory/inventory';
+import Inventory from '../features/inventory/inventory.js';
 
 function App (props) {
   
