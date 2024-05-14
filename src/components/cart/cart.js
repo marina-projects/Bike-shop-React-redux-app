@@ -30,7 +30,7 @@ const Cart = ( {openCart, cart, dispatch, currency} ) => {
                     <h3>Your cart</h3>
                 </div>
                 <div className="table-area div-column">
-                    <CartItemsList cart={cart} dispatch={dispatch}/>
+                    <CartItemsList cart={cart} dispatch={dispatch} currency={currency}/>
                 </div>
                 <div className="total-area">
                     <h4>Total:</h4>

@@ -6,6 +6,7 @@ import Menu from "../../features/menu/menu";
 import CurrencyFilter from "../../features/currency/currecncyFilter";
 import { openCart } from "../../features/cart/openCartSlice";
 import { totalSum } from "../../utilities/utilities";
+import { totalItems } from "../../utilities/utilities";
 import { getCurrentPrice } from "../../utilities/utilities";
 import { getCurrencySymbol } from "../../utilities/utilities";
 
@@ -18,6 +19,7 @@ const Header = ( {inventory, dispatch, cart, currency} ) => {
     const currentSum = totalSum(cart);
     const currentTotal = getCurrentPrice(currency, currentSum);
     const currentSymbol = getCurrencySymbol(currency);
+    const currentTotalItems = totalItems(cart);
 
     return (
         <div className="div-column">
@@ -43,7 +45,7 @@ const Header = ( {inventory, dispatch, cart, currency} ) => {
                 <div className="cart-area">
                     <div className="cart-icon" onClick={() => handleOpenCart()}>
                         <ShoppingBagOutlinedIcon sx={{ fontSize: 36 }}/>
-                        <p className="qauntity">1</p>
+                        <p className="qauntity">{currentTotalItems}</p>
                         <p>{currentSymbol}{currentTotal} {currency}</p>
                     </div>
                 </div>

@@ -3,7 +3,15 @@
 export const totalSum = (cart) => {
     let summa = 0;
     for (let i = 0; i < cart.length; i++) {
-        summa = summa + cart[i].itemPrice;
+        summa = summa + (cart[i].item.itemPrice * cart[i].quantity);
+    }
+    return summa;
+}
+
+export const totalItems = (cart) => {
+    let summa = 0;
+    for (let i = 0; i < cart.length; i++) {
+        summa = summa + (cart[i].quantity);
     }
     return summa;
 }
