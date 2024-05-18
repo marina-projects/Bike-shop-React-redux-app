@@ -1,3 +1,72 @@
+import { createSlice } from "@reduxjs/toolkit";
+
+// const options = {
+//     name: 'cart',
+//     initialState: [],
+//     reducers: {
+//         addItem: (state, action) => {
+//             const itemTitle = action.payload.title
+//             const itemPrice = action.payload.price
+//             const itemId = action.payload.id
+//             const existingItem = state.find(item => item.item.itemId === itemId);
+//             console.log(`Item: ${existingItem}`);
+
+//             if(existingItem) {
+//                 const newQuantity = existingItem.quantity + 1;
+//                 console.log(`Quantity: ${newQuantity}`)
+//                 const filteredCart = state.filter(item => item.item.itemId !== existingItem.item.itemId);
+//                 console.log(`Filtered cart: ${filteredCart}`);
+
+//                 const newItem = {
+//                     ...existingItem,
+//                     quantity: newQuantity
+//                 }
+
+//                 return [
+//                     ...filteredCart,
+//                     newItem
+//                 ]
+//             } else {
+//                 const newItem = {
+//                     item: {itemTitle, itemPrice, itemId},
+//                     quantity: 1
+//                 }
+    
+//                 return [
+//                     ...state,
+//                     newItem
+//                 ];
+//             }
+//         },
+//         removeItem: (state, action) => {
+//             return state.filter(item => item.item.itemId !== action.payload.itemId);
+//         },
+//         changeQuantity: (state, action) => {
+//             const itemId = action.payload.item.item.itemId;
+//             const newQuantity = action.payload.input;
+            
+//             const updatedCart = state.map(item => {
+//                 if (item.item.itemId === itemId) {
+//                     return {
+//                         ...item,
+//                         quantity: newQuantity
+//                     };
+//                 }
+//                 return item;
+//             });
+        
+//             return updatedCart;
+//         }
+//     }
+// }
+
+// export const cartSlice = createSlice(options);
+
+// export const { addItem, removeItem, changeQuantity } = createSlice.actions;
+// export default cartSlice.reducer;
+
+
+
 // ACTION CREATORS
 
 // add item
