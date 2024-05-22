@@ -2,8 +2,7 @@
 
 This is a [basic archive + cart app](https://polar-bike-shop.netlify.app/) demonstartes usage of Redux clices, action creators and reducers. 
 
-![Screenshot of the app](/src/images/photo_2024-05-22_11-19-10.jpg)
-<img src="/src/images/photo_2024-05-22_11-19-10.jpg" alt="Screenshot of the app" width="50%">
+<img src="/src/images/photo_2024-05-22_11-19-10.jpg" alt="Screenshot of the app" width="75%">
 
 In the app users can see a default list of bicycles, add them to the cart, change quantity and see prices in different currencies. 
 
