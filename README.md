@@ -36,7 +36,7 @@ Here's a quick summary of the functionalities in the app:
 - Working with action creators, reducers, immutable updates
 - Using createSlice() from Redux Toolkit
 - Using MUI material libraries to set forms
-- Using Netlify to create proxy function for storage API keys
+- Creating my own design in Figma and making it responsive
 
 ## Using this project
 To run this project:
@@ -51,4 +51,4 @@ Just to see:
 
 ## Contributions and Feedback
 Thanks for taking a look at this code. Feel free to add, remove, change, and comment this App. I'll appreciate any thoughts or ideas that about how to make it better. 
-For more information about me and my projects visit my website: [https://marina-romanova.com/](https://marina-romanova.com/)
+For more information about me and my projects visit my account or my website: [https://marina-romanova.com/](https://marina-romanova.com/)
