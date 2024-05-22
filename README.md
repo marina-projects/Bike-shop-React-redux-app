@@ -1,6 +1,8 @@
 # Bike shop - react/redux learning app
 
-This is a [basic archive + cart app](https://polar-bike-shop.netlify.app/) that demonstartes usage of Redux clices, action creators and reducers. 
+This is a [basic archive + cart app](https://polar-bike-shop.netlify.app/) demonstartes usage of Redux clices, action creators and reducers. 
+
+![Screenshot of the app](/src/images/photo_2024-05-22_11-19-10.jpg)
 
 In the app users can see a default list of bicycles, add them to the cart, change quantity and see prices in different currencies. 
 
